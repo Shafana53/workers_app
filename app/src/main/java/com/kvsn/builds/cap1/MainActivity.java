@@ -3,10 +3,15 @@ package com.kvsn.builds.cap1;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+//import android.support.v4.app.ActivityOptionsCompat;
+//import android.support.v4.view.ViewCompat;
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
+
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -60,7 +65,7 @@ public class MainActivity extends AppCompatActivity
 
 	    r1 = findViewById(R.id.relative_login);
 	    login_icon = findViewById(R.id.imgView_logo);
-	    signup_icon = findViewById(R.id.imgView_icon_signup);
+	    //signup_icon = findViewById(R.id.imgView_icon_signup);
 	    r2 = findViewById(R.id.relative_signup);
 	    et_mail = findViewById(R.id.login_mail);
 	    et_pwd = findViewById(R.id.login_pwd);

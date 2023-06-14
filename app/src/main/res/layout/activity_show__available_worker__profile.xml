@@ -36,23 +36,25 @@
 	       android:background="@drawable/circle_border">
 
 
-	       <ImageView
-		    android:transitionName="trans1"
+		  <ImageView
+			  android:id="@+id/img_profile"
 
-		    android:id="@+id/img_profile"
+			  android:layout_width="120dp"
 
-		    android:layout_width="120dp"
+			  android:layout_height="120dp"
 
-		    android:layout_height="120dp"
+			  android:layout_marginStart="9dp"
 
-		    android:layout_margin="9dp"
-
-		    android:adjustViewBounds="true"
+			  android:layout_marginTop="9dp"
 
 
-		    android:scaleType="centerInside"
+			  android:layout_marginEnd="9dp"
 
-		    android:src="@drawable/profile" />
+			  android:layout_marginBottom="9dp"
+			  android:adjustViewBounds="true"
+			  android:scaleType="centerInside"
+			  android:src="@drawable/profile"
+			  android:transitionName="trans1" />
 
 
 	  </RelativeLayout>

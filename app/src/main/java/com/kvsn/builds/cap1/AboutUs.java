@@ -1,7 +1,9 @@
 package com.kvsn.builds.cap1;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class AboutUs extends AppCompatActivity
 {

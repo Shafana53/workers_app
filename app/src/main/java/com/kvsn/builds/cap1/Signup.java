@@ -3,8 +3,11 @@ package com.kvsn.builds.cap1;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.annotation.NonNull;
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;

@@ -4,8 +4,10 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -173,21 +175,18 @@ public class PhotoUpload extends AppCompatActivity
 
      }
 
-     public void onActivityResult(int requestcode , int resultcode , Intent data)
-     {
-	    if(resultcode == RESULT_OK)
-	    {
-		   if(requestcode == SELECT_PICTURE)
-		   {
-			  filepath = data.getData();
+     public void onActivityResult(int requestcode , int resultcode , Intent data) {
+		 super.onActivityResult(requestcode, resultcode, data);
+		 if (resultcode == RESULT_OK) {
+			 if (requestcode == SELECT_PICTURE) {
+				 filepath = data.getData();
 
-			  if(filepath != null)
-			  {
-				 Picasso.get().load(filepath).transform(new CropCircleTransformation()).into(image);
-			  }
-		   }
-	    }
-     }
+				 if (filepath != null) {
+					 Picasso.get().load(filepath).transform(new CropCircleTransformation()).into(image);
+				 }
+			 }
+		 }
+	 }
 
      @Override
      public void onBackPressed()

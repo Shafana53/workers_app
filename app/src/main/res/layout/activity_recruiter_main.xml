@@ -15,7 +15,8 @@
 	  android:orientation="vertical"
 	  android:tag="@string/tag_menu"
 	  app:footer="@layout/duo_view_footer"
-	  app:header="@layout/header" />
+	  app:header="@layout/header"
+		/>
 
      <LinearLayout
 	  android:layout_width="match_parent"
@@ -23,7 +24,7 @@
 	  android:orientation="vertical"
 	  android:tag="@string/tag_content">
 
-	  <android.support.v7.widget.Toolbar
+	  <androidx.appcompat.widget.Toolbar
 	       android:id="@+id/toolbar"
 	       android:layout_width="match_parent"
 	       android:layout_height="?attr/actionBarSize"
@@ -49,15 +50,16 @@
 			 android:layout_weight="1"
 			 android:layout_width="match_parent"
 			 android:layout_height="0dp">
-			 <TextView
-			      android:id="@+id/textGrid"
-			      android:text="CATAGORIES"
-			      android:textStyle="bold"
-			      android:textSize="34sp"
-			      android:layout_width="wrap_content"
-			      android:layout_centerInParent="true"
 
-			      android:layout_height="wrap_content" />
+				<TextView
+					android:id="@+id/textGrid"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+
+					android:text="CATAGORIES"
+					android:textSize="34sp"
+					android:textStyle="bold" />
 		    </RelativeLayout>
 		    <GridLayout
 			 android:columnCount="2"
@@ -69,7 +71,7 @@
 			 android:layout_width="match_parent"
 			 android:layout_height="0dp">
 
-			 <android.support.design.card.MaterialCardView
+			 <com.google.android.material.card.MaterialCardView
 			      android:layout_width="0dp"
 			      android:layout_height="0dp"
 			      android:layout_columnWeight="1"
@@ -79,6 +81,7 @@
 			      android:layout_rowWeight="1"
 			      app:cardElevation="8dp"
 			      app:cardCornerRadius="8dp"
+
 			      >
 
 			      <LinearLayout
@@ -94,7 +97,8 @@
 					android:onClick="dothis"
 					android:layout_gravity="center_horizontal"
 					android:layout_width="wrap_content"
-					android:layout_height="60dp" />
+					android:layout_height="60dp"
+					   android:contentDescription="electrician"/>
 				   <TextView
 					android:text="Electrician"
 					android:textAlignment="center"
@@ -104,9 +108,9 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content" />
 			      </LinearLayout>
-			 </android.support.design.card.MaterialCardView>
+			 </com.google.android.material.card.MaterialCardView>
 
-			 <android.support.design.card.MaterialCardView
+			 <com.google.android.material.card.MaterialCardView
 			      android:layout_width="0dp"
 			      android:layout_height="0dp"
 			      android:layout_columnWeight="1"
@@ -131,7 +135,8 @@
 					android:onClick="dothis"
 					android:layout_gravity="center_horizontal"
 					android:layout_width="wrap_content"
-					android:layout_height="60dp" />
+					android:layout_height="60dp"
+					   android:contentDescription="mason"/>
 
 				   <TextView
 					android:layout_width="wrap_content"
@@ -143,8 +148,8 @@
 					android:textSize="18dp"
 					android:textStyle="bold" />
 			      </LinearLayout>
-			 </android.support.design.card.MaterialCardView>
-			 <android.support.design.card.MaterialCardView
+			 </com.google.android.material.card.MaterialCardView>
+			 <com.google.android.material.card.MaterialCardView
 			      android:layout_width="0dp"
 			      android:layout_height="0dp"
 			      android:layout_columnWeight="1"
@@ -169,7 +174,9 @@
 					android:onClick="dothis"
 					android:layout_gravity="center_horizontal"
 					android:layout_width="wrap_content"
-					android:layout_height="60dp" />
+					android:layout_height="60dp"
+					   android:contentDescription="plumber"
+					   />
 				   <TextView
 					android:text="Plumber"
 					android:layout_gravity="center"
@@ -180,8 +187,8 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content" />
 			      </LinearLayout>
-			 </android.support.design.card.MaterialCardView>
-			 <android.support.design.card.MaterialCardView
+			 </com.google.android.material.card.MaterialCardView>
+			 <com.google.android.material.card.MaterialCardView
 			      android:layout_width="0dp"
 			      android:layout_height="0dp"
 			      android:layout_columnWeight="1"
@@ -206,7 +213,8 @@
 					android:onClick="dothis"
 					android:layout_gravity="center_horizontal"
 					android:layout_width="wrap_content"
-					android:layout_height="60dp" />
+					android:layout_height="60dp"
+					   android:contentDescription="labour"/>
 				   <TextView
 					android:text="Labour"
 					android:layout_gravity="center"
@@ -217,9 +225,9 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content" />
 			      </LinearLayout>
-			 </android.support.design.card.MaterialCardView>
+			 </com.google.android.material.card.MaterialCardView>
 
-			 <android.support.design.card.MaterialCardView
+			 <com.google.android.material.card.MaterialCardView
 			      android:layout_width="0dp"
 			      android:layout_height="0dp"
 			      android:layout_columnWeight="1"
@@ -244,7 +252,8 @@
 					android:onClick="dothis"
 					android:layout_gravity="center_horizontal"
 					android:layout_width="wrap_content"
-					android:layout_height="60dp" />
+					android:layout_height="60dp"
+					   android:contentDescription="carpainter"/>
 				   <TextView
 					android:text="Carpenter"
 					android:textAlignment="center"
@@ -255,8 +264,8 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content" />
 			      </LinearLayout>
-			 </android.support.design.card.MaterialCardView>
-			 <android.support.design.card.MaterialCardView
+			 </com.google.android.material.card.MaterialCardView>
+			 <com.google.android.material.card.MaterialCardView
 			      android:layout_width="0dp"
 			      android:layout_height="0dp"
 			      android:layout_columnWeight="1"
@@ -281,7 +290,8 @@
 					android:onClick="dothis"
 					android:layout_gravity="center_horizontal"
 					android:layout_width="wrap_content"
-					android:layout_height="60dp" />
+					android:layout_height="60dp"
+					   android:contentDescription="painter"/>
 				   <TextView
 					android:text="Painter"
 					android:textAlignment="center"
@@ -292,7 +302,7 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content" />
 			      </LinearLayout>
-			 </android.support.design.card.MaterialCardView>
+			 </com.google.android.material.card.MaterialCardView>
 		    </GridLayout>
 
 

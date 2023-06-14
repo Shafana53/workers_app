@@ -34,7 +34,7 @@
 	  android:fontFamily="@font/castro"
 	  android:text="Vishnu Sai Nath Karumuri"
 	  android:textColor="@color/white"
-	  android:textSize="15dp" />
+	  android:textSize="30sp" />
      <TextView
 	  android:layout_width="wrap_content"
 	  android:id="@+id/header_mail"
@@ -42,6 +42,7 @@
 	  android:layout_marginTop="10dp"
 	  android:fontFamily="sans-serif"
 	  android:layout_height="wrap_content"
+		 android:textSize="18sp"
 	  android:text="vishnusai.karumuri@gmail.com"/>
      </LinearLayout>
 

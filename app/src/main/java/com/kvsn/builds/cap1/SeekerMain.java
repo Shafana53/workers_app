@@ -3,15 +3,25 @@ package com.kvsn.builds.cap1;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+//import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+//import android.support.v4.app.ActivityOptionsCompat;
+//import android.support.v4.view.ViewCompat;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
+
+//import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
+//import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+//import android.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -62,8 +72,8 @@ public class SeekerMain extends AppCompatActivity implements DuoMenuView.OnMenuC
 	  mDatabase = FirebaseDatabase.getInstance().getReference();
 	  msubref = mDatabase.child("Users").child(mAuth.getCurrentUser().getUid());
 	  mTitles = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.menuOptions)));
-	  header = findViewById(R.id.image_header);
-	  image = findViewById(R.id.Img_profile_Seeker);
+	  header = findViewById(R.id.toolbar);
+	  image = findViewById(R.id.Img_profile_seeker);
 	  workref = mDatabase.child("Extra detail of seeker").child("Experience of all").child(mAuth.getCurrentUser().getUid());
 
 	  // Initialize the views
@@ -83,10 +93,10 @@ public class SeekerMain extends AppCompatActivity implements DuoMenuView.OnMenuC
 
 	  retrieve();
      }
-     public void showComments(View view)
-     {
-          startActivity(new Intent(SeekerMain.this , ShowComments.class));
-     }
+    // public void showComments(View view)
+     //{
+     //     startActivity(new Intent(SeekerMain.this , ShowComments.class));
+     //}
 
      public void retrieve()
      {

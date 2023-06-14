@@ -14,18 +14,20 @@
 	  android:id="@+id/ratingbar"
 	  android:rating="2.5"
 	  android:numStars="5"
-	  android:stepSize="0.5"/>
+	  android:stepSize="0.5"
+		 android:contentDescription="Rating Bar"/>
 
-     <EditText
-	  android:layout_marginTop="20dp"
-	  android:layout_marginLeft="10dp"
-	  android:layout_marginRight="10dp"
-	  android:layout_marginBottom="15dp"
-	  android:layout_width="match_parent"
-	  android:layout_height="wrap_content"
-	  android:inputType="textMultiLine"
-	  android:id="@+id/review_comment"
-	  android:hint="Please Share Your Review"/>
+	<EditText
+		android:id="@+id/review_comment"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="15dp"
+		android:hint="Please Share Your Review"
+		android:inputType="textMultiLine"
+		android:textSize="27sp"/>
 
 
 </LinearLayout>

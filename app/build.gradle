@@ -2,15 +2,17 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 31
+
     defaultConfig {
         applicationId "com.kvsn.builds.cap1"
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -21,47 +23,46 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.firebase:firebase-database-ktx:21.0.1'
+    implementation 'androidx.core:core:1.10.0'
     testImplementation 'junit:junit:4.12'
-    //noinspection GradleCompatible
-    //androidTestImplementation 'com.android.support.RecruiterMain:runner:1.0.2'
-    //androidTestImplementation 'com.android.support.RecruiterMain.espresso:espresso-core:3.0.2'
 
-    //app default implementations
-    //noinspection GradleCompatible
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    //implementation 'com.google.android.material:material:1.0.0'
-    implementation 'com.android.support:design:28.0.0'
-    implementation 'com.android.support:support-v4:28.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    // App Default Implementations
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
 
-    //firebase libraries impleentation
-    implementation 'com.google.firebase:firebase-core:16.0.5'
-    implementation 'com.google.firebase:firebase-messaging:17.3.4'
-    implementation 'com.google.firebase:firebase-auth:16.0.5'
-    implementation 'com.google.firebase:firebase-database:16.0.5'
-    implementation 'com.google.firebase:firebase-storage:16.0.5'
+    // Firebase Libraries Implementation
+    implementation 'com.google.firebase:firebase-core:19.0.2'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.3'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
 
-    //google play services
-    //implementation 'com.google.android.gms:play-services-auth:16.0.1'
-    implementation 'com.google.android.gms:play-services-maps:16.0.0'
-    implementation 'com.google.android.gms:play-services-places:16.0.0'
-    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    // Google Play Services
+    implementation 'com.google.android.gms:play-services-maps:18.0.1'
+    implementation 'com.google.android.gms:play-services-places:18.0.0'
+   implementation 'com.google.android.gms:play-services-location:20.1.0'
 
-    //third party libraries implementations
-    //for custom navigation drawer from Psd company github
+    // Third-Party Libraries Implementations
     implementation 'nl.psdcompany:duo-navigation-drawer:2.0.8'
-    //for picasso , to display image in image views directly from the web / firebase storage
+    implementation 'com.facebook.android:facebook-android-sdk:4.37.0'
+    implementation 'com.andkulikov:transitionseverywhere:1.8.0'
+    implementation 'com.github.traex.rippleeffect:library:1.3'
+    implementation 'net.steamcrafted:materialiconlib:1.1.5'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'com.facebook.android:facebook-android-sdk:4.37.0' //for facebook login
-    implementation 'de.hdodenhof:circleimageview:2.2.0' //for circular image
-    implementation 'com.andkulikov:transitionseverywhere:1.8.0' //for transistions
-    implementation 'com.github.traex.rippleeffect:library:1.3' //for Ripple Effect On click
-    implementation 'net.steamcrafted:materialiconlib:1.1.5' //for material icons
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+' //for selecting Image
-    implementation 'com.squareup.picasso:picasso:2.71828' //for picasso
-    implementation 'jp.wasabeef:picasso-transformations:2.2.1' //for picasso transformation
-    implementation 'com.github.bumptech.glide:glide:3.7.0' //for loading image alternate
-    implementation 'com.android.volley:volley:1.1.1' //volley JSON
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.geniusforapp.fancydialog:FancyDialog:0.1.4'
-//for alert dialog of internet connection
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.annotation:annotation:1.3.0'
+    implementation 'androidx.fragment:fragment:1.4.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.gms:play-services:12.0.1'
+
 }
